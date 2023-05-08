@@ -1,5 +1,9 @@
 # docker-nym-client
 
+## Set the permissions 
+
+`chown -R 10000:10000 nym-client/nym-data/`
+
 ## Environment variables
 
 | Name                | Default     | Description                     |
