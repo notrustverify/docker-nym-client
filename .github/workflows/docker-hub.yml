@@ -46,8 +46,8 @@ jobs:
           tags: |
             ${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:latest
             ${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:${{ steps.get_version.outputs.VERSION }}
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:buildcache,mode=max
+         # cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:buildcache
+         # cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/nym-client:buildcache,mode=max
 
     
     - name: Image digest
