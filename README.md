@@ -1,4 +1,5 @@
 # docker-nym-client
+[![Docker Image CI](https://github.com/notrustverify/docker-nym-client/actions/workflows/docker-hub.yml/badge.svg)](https://github.com/notrustverify/docker-nym-client/actions/workflows/docker-hub.yml)
 
 ## Set the permissions 
 
