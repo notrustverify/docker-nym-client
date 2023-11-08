@@ -7,7 +7,7 @@ RUN git clone https://github.com/nymtech/nym && cd nym && git checkout $(curl -s
 WORKDIR /nym
 
 # Build your program for release
-RUN cargo build --bin nym-client --release && echo "nym-client built !!!" || "nym-client failed to build."
+RUN cargo build --release && echo "nym-client built !!!" || "nym-client failed to build."
 RUN rm -rf target/release/deps/* target/release/build/*
 
 
