@@ -7,7 +7,7 @@ RUN git clone https://github.com/nymtech/nym && cd nym && git checkout $(curl -s
 WORKDIR /nym
 
 # Build your program for release
-RUN cargo build -p nym-client --release && echo "nym-mixnode built !!!" || "nym-client failed to build."RUN rm -rf target/release/deps/* target/release/build/*
+RUN cargo build --release && echo "nym-mixnode built !!!" || "nym-client failed to build."RUN rm -rf target/release/deps/* target/release/build/*
 RUN rm -rf target/release/deps/* target/release/build/*
 
 FROM bitnami/minideb:latest
