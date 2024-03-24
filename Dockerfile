@@ -1,5 +1,5 @@
 # 1. This tells docker to use the Rust official image
-FROM rust:1.70-slim-buster as build
+FROM rust:1.72-slim-buster as build
 
 # 2. Copy the files in your machine to the Docker image
 RUN apt-get update && apt-get -y install pkg-config build-essential libssl-dev curl git && rm -rf /var/lib/apt/lists/*
